@@ -111,6 +111,5 @@ void goToSleep ()
   sleep_cpu ();          // sleep
   sleep_disable ();      // precaution
   power_all_enable ();   // power everything back on
-  ADCSRA = 1;            // turn on ADC
   ADCSRA = prevADCSRA;
 }  // end of goToSleep
